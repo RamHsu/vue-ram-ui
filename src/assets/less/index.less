@@ -1,0 +1,18 @@
+body {
+  background-color: @body_bg_color;
+  color: @body_txt_color;
+  margin: 0;
+}
+
+#app {
+  > .bd-nav {
+    height: @nav_height;
+    background-color: @nav_bg_color;
+    color: @nav_txt_color;
+  }
+
+  > .bd-main {
+    height: calc(100vh - @nav_height);
+    overflow: auto;
+  }
+}
